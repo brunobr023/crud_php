@@ -14,9 +14,9 @@
 	<input type="submit" value="Calcular Média">
 </form>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
+$servername = "%sitehost";
+$username = "host_site";
+$password = "sitehost123";
 $dbname = "clientes";
 
 try {
