@@ -27,6 +27,14 @@
             }
         }
     }
-
+    $nome = $_POST["nome_Cliente"];
+    $telefone = $_POST["telefone_Cliente"];
+    $email = $_POST["email_Cliente"];
+    $compra_caliente = $_POST["compra_Cliente"];
+  
+    $insert = "INSERT INTO clientes(nome_Cliente, telefone_Cliente, email_Cliente, compra_Cliente) 
+      VALUES('$nome','$telefone','$email','$compra_cliente')";
+      
+      $insert_execucao = mysqli_query($conexao, $insert);
 
 ?>
