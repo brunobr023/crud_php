@@ -4,20 +4,20 @@
 	$link = $con->getConexao();
 ?>
 
-<form  method="post" action="<?php echo ;?>">
+<form  method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
 	<label for="Nome">Nota 1:</label>
-	<input type="number" name="nota1" required><br>
+	<input type="text" name="nome_Cliente" required><br>
 	
 	<label for="Telefone">Nota 2:</label>
-	<input type="number" name="nota2" required><br>
+	<input type="number" name="telefone_cliente" required><br>
 	
-	<label for="">Nota 3:</label>
-	<input type="number" name="nota3" required><br>
+	<label for="Email">Nota 3:</label>
+	<input type="email" name="email_cliente" required><br>
 	
-	<label for="nota4">Nota 4:</label>
-	<input type="number" name="nota4" required><br>
+	<label for="Compra">Nota 4:</label>
+	<input type="text" name="compra_cliente" required><br>
 	
-	<input type="submit" value="Calcular Média">
+	<input type="submit" value="Enviar Dados">
 </form>
 <?php
 	
