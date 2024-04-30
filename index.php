@@ -5,7 +5,7 @@
 	require_once("dbconection.php");
 	$con = new Database();
 	$link = $con->getConexao();
-
+?>
 	<form  method="post" action="dbcontecion.php">
 		<label for="Nome">Nota 1:</label>
 		<input type="text" name="nome_Cliente" required><br>
@@ -20,5 +20,4 @@
 		<input type="text" name="compra_Cliente" required><br>
 	
 		<input type="submit" value="Enviar Dados">
-</form>
-?>
+	</form>
