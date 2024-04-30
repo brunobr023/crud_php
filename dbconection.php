@@ -4,7 +4,6 @@
         private $host;
         private $dbname;
         private $username;
-//        private $password;
 
         private $con;
 // conectando com o banco e criando uma função
@@ -13,14 +12,12 @@
             $this-> host = "localhost";
             $this->dbname = "test";
             $this->username = "root";
-//            $this->password = "root";
         }
         function getConexao(){
             try{
                 $this->con = new PDO(
                     "$this->driver: host=$this->host; dbname=$this->dbname",
-                    $this-> username,
-//                    $this->password
+                    $this-> username
                 );
 
                 $this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);

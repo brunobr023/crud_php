@@ -4,7 +4,7 @@
 	$link = $con->getConexao();
 ?>
 
-<form  method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+<form  method="post" action="<?php echo ;?>">
 	<label for="Nome">Nota 1:</label>
 	<input type="number" name="nota1" required><br>
 	
@@ -19,3 +19,7 @@
 	
 	<input type="submit" value="Calcular Média">
 </form>
+<?php
+	
+
+?>
